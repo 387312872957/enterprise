@@ -1,0 +1,331 @@
+/* DISCLAIMER
+
+    All code below may contain:
+    -Bad formating
+    -Incorrect code
+    -Unnecessary code
+    -Repeated Code
+    -The occasional slip-up
+
+This is in no way the fault of Luke Finlayson and
+can be blamed on late nights, short deadlines and 
+exceptionally ditracting distractions.
+
+               _____
+       _..--'''@   @'''--.._
+     .'   @_/-//-\/>/>'/ @  '.
+    (  @  /_<//<'/----------^-)  - Like this cake
+    |'._  @     //|###########|
+    |~  ''--..@|',|}}}}}}}}}}}|
+    |  ~   ~   |/ |###########|
+    | ~~  ~   ~|./|{{{{{{{{{{{|
+     '._ ~ ~ ~ |,/`````````````
+  jrei  ''--.~.|/
+
+/* Overall Styling */
+html {
+    display: inline-block;
+    background-color: black;
+}
+body {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px
+}
+
+/* Header */
+.header {
+    background-color: black;
+}
+h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #076107;
+    padding-left: 42.5%;
+}
+.header span {
+    color: #066606;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 6px;
+}
+.header span:hover {
+    color: #1BAD1B;
+}
+
+
+/* Fonts and Padding */
+a {
+    font-family:Arial, Helvetica, sans-serif;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    padding-left: 1%;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding-left: 1%;
+}
+
+
+/* Nav Bar and Hamburger Styling */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #066606;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #1BAD1B;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* Main Page */
+.mainpage h2 {
+    color: #054905;
+    text-align: center;
+}
+.mainpage p {
+    color: #1BAD1B;
+    text-align: center;
+}
+
+/* Parallax */
+.parallax {
+    background-image: url("chess2.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax1 {
+    background-image: url("money.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 {
+    background-image: url("money.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax3 {
+    background-image: url("chess.jpeg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.caption {
+    position: relative;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.caption span.border {
+    background-color: #111;
+    color: #1BAD1B;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.9;
+}
+
+
+/* About Page */
+.about {
+    background-image: url("money.jpg");
+    padding-top: 40px;
+    padding-bottom: 40px
+}
+.about h2 {
+    color: #054905;
+}
+.about p {
+    color: #1BAD1B;
+}
+
+
+/*Java Script about page*/
+.js-demo h2 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #054905;
+}
+.js-demo p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #1BAD1B;
+}
+.js-demo button {
+    background-color: #089C08;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 16px;
+    border-radius: 10%;
+}
+#topbtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 45%;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #089C08;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+#topbtn:hover {
+    background-color: #555;
+}
+
+/* Product Page */
+.product {
+    background-image: url("chess.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    text-shadow: 1px 1px black;
+}
+.product h2 {
+    color: #054905;
+}
+.product p {
+    color: #1BAD1B;
+}
+
+
+/* Contact Styling */
+.contacta h3 {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #054905;
+    text-shadow: 1px 1px black;
+}
+.contactaa {
+    float: left;
+}
+.contacta p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #054905;
+    text-shadow: 1px 1px #1BAD1B;
+}
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    list-style-type: none;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+.contacta {
+    padding-left: 6px;
+}
+.c-bg {
+    background-image: url("blur.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/* Articles and Features */
+article {
+    width: 100%;
+    display: inline-block;
+}
+.features {
+    background-color: black;
+    opacity: 0.8;
+}
+article h2 {
+    color: #054905;
+}
+.producta article h2 {
+    color: #054905;
+}
+.product article p {
+    color: #1BAD1B;
+}
+.description h2 {
+    font-size: 20px;
+}
+.description {
+    background-color: black;
+    opacity: 0.8;
+}
+.mainpage .features {
+    background-color: black;
+    opacity: 0.8;
+}
+
+/* Footer */
+footer a {
+    text-decoration: none;
+    color: #76EE76;
+    position: absolute;
+    right: 0;
+    padding-right: 6px;
+}
+footer h3 {
+    color: #8DCC8D;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    padding-left: 6px;
+}
+footer {
+    width: 100%;
+    display: inline-block;
+    background-color: black;
+    margin: 0;
+}
